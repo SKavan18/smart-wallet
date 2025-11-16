@@ -7,7 +7,7 @@ from datetime import datetime
 # -------------------------------------------------------
 
 st.set_page_config(
-    page_title="Smart Campus Wallet – Spending Intelligence",
+    page_title="CashTrack – Smart Campus Wallet",
     page_icon="💳",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -76,6 +76,19 @@ st.markdown(
         margin-bottom: 8px;
     }
 
+    .cashtrack-brand {
+        font-size: 42px;
+        font-weight: 800;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 8px;
+    }
+
     .metric-label {
         font-size: 11px;
         opacity: 0.6;
@@ -107,7 +120,7 @@ st.markdown(
     .chat-container {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 20px;
         margin-top: 8px;
     }
     .chat-bubble {
@@ -116,6 +129,7 @@ st.markdown(
         border-radius: 14px;
         font-size: 14px;
         line-height: 1.4;
+        margin-bottom: 6px;
     }
     .chat-bubble.user {
         align-self: flex-end;
@@ -254,8 +268,8 @@ if filtered.empty:
 st.markdown(
     """
     <div class='glass-card'>
+        <div class='cashtrack-brand'>💳 CashTrack</div>
         <div class='hero-chip'>Live Spending Telemetry</div>
-        <div class='hero-title'>💳 Smart Campus Wallet</div>
         <div class='hero-subtitle'>
             Real-time insights into student spending across dining, books, transportation, entertainment, and more.
         </div>
@@ -466,7 +480,7 @@ with tab3:
             books_total = filtered[filtered["category"] == "Books"]["amount"].sum()
             if books_total > 0:
                 advice.append(
-                    "You’re spending a noticeable amount on books. Check the Rutgers library, rentals, or used book swaps "
+                    "You're spending a noticeable amount on books. Check the Rutgers library, rentals, or used book swaps "
                     "before buying new."
                 )
 
@@ -478,7 +492,7 @@ with tab3:
 
         if days > 0 and tx_count / days > 3:
             advice.append(
-                "You’re making purchases very frequently. Try a weekly 'no-spend day' or batch errands together to reduce impulse swipes."
+                "You're making purchases very frequently. Try a weekly 'no-spend day' or batch errands together to reduce impulse swipes."
             )
 
     if not advice:
@@ -486,7 +500,7 @@ with tab3:
             "Your spending pattern looks fairly balanced in this view. Keep checking in weekly so you stay ahead of your budget."
         )
 
-    # Chat-style rendering
+    # Chat-style rendering with spacing
     st.markdown("<div class='chat-container'>", unsafe_allow_html=True)
 
     st.markdown(
