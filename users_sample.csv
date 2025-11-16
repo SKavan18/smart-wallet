@@ -1,0 +1,21 @@
+user_id,name,major,class_year,residence_type,interests
+U001,Alex Rivera,Computer Science,2027,Dorm,tech,gaming,clubs
+U002,Maya Patel,Finance,2026,Commuter,finance,career,networking
+U003,Jordan Lee,Engineering,2025,Dorm,robotics,hardware,fitness
+U004,Taylor Johnson,Biology,2025,Dorm,wellness,volunteering,pre-med
+U005,Chris Martinez,Marketing,2027,Off-Campus Apartment,content,social-media,events
+U006,Sara Kim,Data Science,2026,Dorm,ai,stats,hackathons
+U007,Liam O'Connor,Accounting,2025,Commuter,finance,investing,clubs
+U008,Noor Ali,Computer Science,2028,Dorm,web-dev,open-source,gaming
+U009,Ethan Rogers,Economics,2027,Off-Campus Apartment,macro,policy,reading
+U010,Zoe Hernandez,Psychology,2026,Dorm,wellness,peer-support,art
+U011,Diego Santos,Computer Science,2027,Dorm,security,ctf,gaming
+U012,Amira Hassan,Math,2026,Commuter,problem-solving,tutoring,clubs
+U013,Brandon Wu,Information Systems,2025,Dorm,productivity,automation,apps
+U014,Kayla Brown,Journalism,2027,Off-Campus Apartment,writing,media,events
+U015,Isaac Green,Physics,2026,Dorm,space,technology,reading
+U016,Olivia Park,Computer Engineering,2025,Dorm,hardware,embedded-systems,gadgets
+U017,Malik Carter,Business Analytics,2027,Commuter,data,finance,dashboarding
+U018,Hannah Nguyen,Statistics,2026,Dorm,ai,data-viz,teaching
+U019,Ryan Flores,Computer Science,2028,Dorm,mobile-dev,gaming,clubs
+U020,Jade Robinson,Urban Studies,2025,Off-Campus Apartment,community,policy,advocacy
